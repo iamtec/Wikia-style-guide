@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Wikia contributors">
+
+<title>
+  
+    Content
+  
+</title>
+
+<!-- Wikia core CSS -->
+<link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+<link href="../assets/css/docs.min.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+                               <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-146052-10']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </head>
+  <body>
+    <a class="sr-only" href="#content">Skip to main content</a>
+
+    <!-- Docs master nav -->
+    <header class="navbar navbar-static-top bs-docs-nav" role="banner" id="top">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="../index.html" class="navbar-brand">Wikia</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="../base/index.html">Base</a>
+        </li>
+        <li class="active">
+          <a href="../content/index.html">Content</a>
+        </li>
+        <li>
+          <a href="../chrome/index.html">Chrome</a>
+        </li>
+        <li>
+          <a href="../patterns/index.html">Patterns</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <!-- Docs page layout -->
+    <div class="bs-header" id="content">
+      <div class="container">
+        <h1>Content</h1>
+        <p>Fundamental content related items including media handling, advertisements, tables and the like.</p>
+      
+      </div>
+    </div>
+
+    <div class="container bs-docs-container">
+
+      <div class="row">
+        <div class="col-md-9" role="main">
+  
+
+
+<!-- Tables
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="tables" class="page-header">Tables</h1>
+
+  <h2 id="tables-example">Basic example</h2>
+  <p>For basic styling&mdash;light padding and only horizontal dividers&mdash;add the base class <code>.table</code> to any <code>&lt;table&gt;</code>. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we've opted to isolate our custom table styles.</p>
+  <div class="bs-example">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /example -->
+
+
+
+  <h2 id="tables-striped">Striped rows</h2>
+  <p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.</p>
+  <div class="bs-callout bs-callout-danger">
+    <h4>Cross-browser compatibility</h4>
+    <p>Striped tables are styled via the <code>:nth-child</code> CSS selector, which is not available in Internet Explorer 8.</p>
+  </div>
+  <div class="bs-example">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /example -->
+
+
+
+  <h2 id="tables-bordered">Bordered table</h2>
+  <p>Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p>
+  <div class="bs-example">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@TwBootstrap</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /example -->
+
+
+
+  <h2 id="tables-hover-rows">Hover rows</h2>
+  <p>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
+  <div class="bs-example">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /example -->
+
+
+  <h2 id="tables-condensed">Condensed table</h2>
+  <p>Add <code>.table-condensed</code> to make tables more compact by cutting cell padding in half.</p>
+  <div class="bs-example">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /example -->
+
+  <h2 id="tables-contextual-classes">Contextual classes</h2>
+  <p>Use contextual classes to color table rows or individual cells.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <colgroup>
+        <col class="col-xs-1">
+        <col class="col-xs-7">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Class</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <code>.active</code>
+          </td>
+          <td>Applies the hover color to a particular row or cell</td>
+        </tr>
+        <tr>
+          <td>
+            <code>.success</code>
+          </td>
+          <td>Indicates a successful or positive action</td>
+        </tr>
+        <tr>
+          <td>
+            <code>.info</code>
+          </td>
+          <td>Indicates a neutral informative change or action</td>
+        </tr>
+        <tr>
+          <td>
+            <code>.warning</code>
+          </td>
+          <td>Indicates a warning that might need attention</td>
+        </tr>
+        <tr>
+          <td>
+            <code>.danger</code>
+          </td>
+          <td>Indicates a dangerous or potentially negative action</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="bs-example">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Column heading</th>
+          <th>Column heading</th>
+          <th>Column heading</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="active">
+          <td>1</td>
+          <td>Column content</td>
+          <td>Column content</td>
+          <td>Column content</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Column content</td>
+          <td>Column content</td>
+          <td>Column content</td>
+        </tr>
+        <tr class="success">
+          <td>3</td>
+          <td>Column content</td>
+          <td>Column content</td>
+          <td>Column content</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Column content</td>
+          <td>Column content</td>
+          <td>Column content</td>
+        </tr>
+        <tr class="info">
+          <td>5</td>
+          <td>Column content</td>
+          <td>Column content</td>
+          <td>Column content</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Column content</td>
+          <td>Column content</td>
+          <td>Column content</td>
+        </tr>
+        <tr class="warning">
+          <td>7</td>
+          <td>Column content</td>
+          <td>Column content</td>
+          <td>Column content</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Column content</td>
+          <td>Column content</td>
+          <td>Column content</td>
+        </tr>
+        <tr class="danger">
+          <td>9</td>
+          <td>Column content</td>
+          <td>Column content</td>
+          <td>Column content</td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /example -->
+
+
+  <h2 id="tables-responsive">Responsive tables</h2>
+  <p>Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive</code> to make them scroll horizontally up to small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.</p>
+  <div class="bs-example">
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+          </tr>
+        </tbody>
+      </table>
+    </div><!-- /.table-responsive -->
+
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+          </tr>
+        </tbody>
+      </table>
+    </div><!-- /.table-responsive -->
+  </div><!-- /example -->
+
+</div>
+
+
+
+
+<!-- Images
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="images" class="page-header">Images</h1>
+
+  <h2 id="images-responsive">Responsive images</h2>
+  <p>Images in Wikia 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code> and <code>height: auto;</code> to the image so that it scales nicely to the parent element.</p>
+
+
+</div>
+
+
+
+<!-- Helpers
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="helper-classes" class="page-header">Helper classes</h1>
+
+  <h3 id="helper-classes-colors">Contextual colors</h3>
+  <p>Convey meaning through color with a handful of emphasis utility classes. These may also be applied to links and will darken on hover just like our default link styles.</p>
+  <div class="bs-example">
+    <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+    <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+    <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+    <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+    <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+    <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+  </div>
+
+  <div class="bs-callout bs-callout-info">
+    <h4>Dealing with specificity</h4>
+    <p>Sometimes emphasis classes cannot be applied due to the specificity of another selector. In most cases, a sufficient workaround is to wrap your text in a <code>&lt;span&gt;</code> with the class.</p>
+  </div>
+
+  <h3 id="helper-classes-backgrounds">Contextual backgrounds</h3>
+  <p>Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes.</p>
+  <div class="bs-example bs-example-bg-classes">
+    <p class="bg-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+    <p class="bg-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+    <p class="bg-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+    <p class="bg-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+    <p class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+  </div>
+
+
+
+  <h3 id="helper-classes-close">Close icon</h3>
+  <p>Use the generic close icon for dismissing content like modals and alerts.</p>
+  <div class="bs-example">
+    <p><button type="button" class="close" aria-hidden="true">&times;</button></p>
+  </div>
+
+
+
+  <h3 id="helper-classes-carets">Carets</h3>
+  <p>Use carets to indicate dropdown functionality and direction. Note that the default caret will reverse automatically in <a href="../components/#btn-dropdowns-dropup">dropup menus</a>.</p>
+  <div class="bs-example">
+    <span class="caret"></span>
+  </div>
+
+
+
+  <h3 id="helper-classes-floats">Quick floats</h3>
+  <p>Float an element to the left or right with a class. <code>!important</code> is included to avoid specificity issues. Classes can also be used as mixins.</p>
+
+
+
+  <div class="bs-callout bs-callout-warning">
+    <h4>Not for use in navbars</h4>
+    <p>To align components in navbars with utility classes, use <code>.navbar-left</code> or <code>.navbar-right</code> instead. <a href="../components/#navbar-component-alignment">See the navbar docs</a> for details.</p>
+  </div>
+
+
+  <h3 id="helper-classes-center">Center content blocks</h3>
+  <p>Set an element to <code>display: block</code> and center via <code>margin</code>. Available as a mixin and class.</p>
+
+
+
+
+  <h3 id="helper-classes-clearfix">Clearfix</h3>
+  <p>Clear the <code>float</code> on any element with the <code>.clearfix</code> class. Utilizes <a href="http://nicolasgallagher.com/micro-clearfix-hack/">the micro clearfix</a> as popularized by Nicolas Gallagher. Can also be used as a mixin.</p>
+
+
+
+  <h3 id="helper-classes-show-hide">Showing and hiding content</h3>
+  <p>Force an element to be shown or hidden (<strong>including for screen readers</strong>) with the use of <code>.show</code> and <code>.hidden</code> classes. These classes use <code>!important</code> to avoid specificity conflicts, just like the <a href="#helper-classes-floats">quick floats</a>. They are only available for block level toggling. They can also be used as mixins.</p>
+  <p><code>.hide</code> is available, but it does not always affect screen readers and is <strong>deprecated</strong> as of v3.0.1. Use <code>.hidden</code> or <code>.sr-only</code> instead.</p>
+  <p>Furthermore, <code>.invisible</code> can be used to toggle only the visibility of an element, meaning its <code>display</code> is not modified and the element can still affect the flow of the document.</p>
+
+
+
+
+  <h3 id="helper-classes-screen-readers">Screen reader content</h3>
+  <p>Hide an element to all devices <strong>except screen readers</strong> with <code>.sr-only</code>. Necessary for following <a href="../getting-started/#accessibility">accessibility best practices</a>. Can also be used as a mixin.</p>
+
+
+
+  <h3 id="helper-classes-image-replacement">Image replacement</h3>
+  <p>Utilize the <code>.text-hide</code> class or mixin to help replace an element's text content with a background image.</p>
+
+</div>
+
+
+        </div>
+        <div class="col-md-3">
+          <div class="bs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-sidenav">
+              
+
+<li>
+  <a href="#tables">Tables</a>
+  <ul class="nav">
+    <li><a href="#tables-example">Basic example</a></li>
+    <li><a href="#tables-striped">Striped rows</a></li>
+    <li><a href="#tables-bordered">Bordered table</a></li>
+    <li><a href="#tables-hover-rows">Hover rows</a></li>
+    <li><a href="#tables-condensed">Condensed table</a></li>
+    <li><a href="#tables-contextual-classes">Contextual classes</a></li>
+    <li><a href="#tables-responsive">Responsive tables</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#images">Images</a>
+  <ul class="nav">
+    <li><a href="#images-responsive">Responsive images</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#helper-classes">Helper classes</a>
+  <ul class="nav">
+    <li><a href="#helper-classes-colors">Contextual colors</a></li>
+    <li><a href="#helper-classes-backgrounds">Contextual backgrounds</a></li>
+    <li><a href="#helper-classes-close">Close icon</a></li>
+    <li><a href="#helper-classes-carets">Carets</a></li>
+    <li><a href="#helper-classes-floats">Quick floats</a></li>
+    <li><a href="#helper-classes-center">Center content blocks</a></li>
+    <li><a href="#helper-classes-clearfix">Clearfix</a></li>
+    <li><a href="#helper-classes-show-hide">Showing and hiding content</a></li>
+    <li><a href="#helper-classes-screen-readers">Screen reader content</a></li>
+    <li><a href="#helper-classes-image-replacement">Image replacement</a></li>
+  </ul>
+</li>
+
+
+              
+            </ul>
+            <a class="back-to-top" href="#top">
+              Back to top
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer
+================================================== -->
+<footer class="bs-footer" role="contentinfo">
+  <div class="container">
+    <div class="bs-social">
+  <ul class="bs-social-buttons">
+    <li>
+      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
+    </li>
+    <li>
+      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
+    </li>
+    <li class="follow-btn">
+      <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
+    </li>
+    <li class="tweet-btn">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://getbootstrap.com/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Bootstrap">Tweet</a>
+    </li>
+  </ul>
+</div>
+
+
+    <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+    <p>Maintained by the <a href="https://github.com/twbs?tab=members">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+    <p>Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    <ul class="footer-links muted">
+      <li>Currently v3.1.0</li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
+      <li>&middot;</li>
+      <li><a href="../getting-started/#examples">Examples</a></li>
+      <li>&middot;</li>
+      <li><a href="../2.3.2/">v2.3.2 docs</a></li>
+      <li>&middot;</li>
+      <li><a href="../about/">About</a></li>
+      <li>&middot;</li>
+      <li><a href="http://expo.getbootstrap.com">Expo</a></li>
+      <li>&middot;</li>
+      <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap/releases">Releases</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Wikia core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<script src="../assets/js/docs.min.js"></script>
+
+
+
+<script>
+  window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id; js.async=1;
+    js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
+</script>
+
+<!-- Analytics
+================================================== -->
+<script>
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+  </body>
+</html>
